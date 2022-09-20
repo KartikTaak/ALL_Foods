@@ -11,6 +11,9 @@ const Nav = () => {
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
+
+                    
+
             <div class="collapse navbar-collapse " id="navbarSupportedContent" >
                 <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -21,12 +24,7 @@ const Nav = () => {
                     <a class="nav-link text-light" href="#search"><span style={{fontSize:"22px"}}>Search</span></a>
                   </li>
                   
-                  {/* <li class="nav-item dropdown">
-                  <a class="nav-link" href="#popular"><span style={{fontSize:"22px"}}>Most Popular</span></a>
-                  </li> */}
-                  <li class="nav-item ">
-                    <a class="nav-link text-light " href="#about"><span style={{fontSize:"22px"}}>About</span></a>
-                  </li>
+    
                   
                   <li class="nav-item">
                     <a class="nav-link text-light " href="#sign"><span style={{fontSize:"22px"}}>Sign In</span></a>

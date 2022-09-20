@@ -9,6 +9,8 @@ import Signform from "./components/Signform";
 import Footer from "./components/Footer";
 
 function App() {
+
+  
   const [search, setSerach] = useState("");
   const [recipes, setRecipes] = useState([]);
 
@@ -33,6 +35,7 @@ function App() {
   const onSearchClick = () => {
     getRecipes();
   };
+
   return (
     <Fragment>
       <section id="nav">
@@ -53,7 +56,9 @@ function App() {
         onSearchClick={onSearchClick}
       />
       <div className="container">
-        <Recipes recipes={recipes} />
+        
+        <Recipes  recipes={recipes} search={search} />
+    
       </div>
     </div>
     </section>

@@ -1,3 +1,6 @@
+body{
+background-color:#CDF0EA;
+}
 .jumbotron {
   background-color: #CDF0EA;
   color: black;
@@ -13,6 +16,7 @@
   
 
 }
+
 .brand-icon {
     font-size: 100px;
 }

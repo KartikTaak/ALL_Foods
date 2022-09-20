@@ -1,21 +1,27 @@
-import React from "react";
+import React, { Fragment } from "react";
 import RecipeItem from "./RecipeItem";
 
 const Recipes = props => {
   const { recipes } = props;
   return (
+   <Fragment>
+
    
-    <div class="card-columns">
-      
+    <div class="card-columns" style={{backgroundColor:"#CDF0EA"}}>
+     
       {recipes.map(recipe => (
         <RecipeItem
           key={Math.random() * 100}
           name={recipe.recipe.label}
           image={recipe.recipe.image}
           ingredientLines={recipe.recipe.ingredientLines}
+         
         />
       ))}
+      
     </div>
+    
+    </Fragment>
   );
 };
 

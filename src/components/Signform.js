@@ -1,6 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Signform.css";
 const Signform = () => {
+    const [user,setUser]=useState("");
+    const [password,setPassword]=useState("");
+    
+    const onclickhandler=(e)=>{
+        if(user.length>0 && password.length>0){
+            alert("Login Successfull");
+            e.preventDefault();
+            
+        }
+        
+    }
   return (
     <div className="login">
 
@@ -8,16 +19,16 @@ const Signform = () => {
     
     <form className="needs-validation">
         <div className="form-group was-validated">
-            <label className="form-label" for="email">Email address</label>
-            <input className="form-control" type="email" id="email" required></input>
-            <div className="invalid-feedback">
+            <label className="form-label" for="email" >Email address</label>
+            <input className="form-control" type="email" onKeyUp={(e)=>{setUser(e.target.value)}} id="email" required></input>
+            <div>
                 Please enter your email address
             </div>
         </div>
         <div className="form-group was-validated">
             <label className="form-label" for="password">Password</label>
-            <input className="form-control" type="password" id="password" required></input>
-            <div className="invalid-feedback">
+            <input className="form-control" type="password" onKeyUp={(e)=>{setPassword(e.target.value)}} id="password" required></input>
+            <div>
                 Please enter your password
             </div>
         </div>
@@ -25,9 +36,9 @@ const Signform = () => {
             <input className="form-check-input" type="checkbox" id="check"></input>
             <label className="form-check-label" for="check">Remember me</label>
         </div>
-        <input style={{color:"white"}} className="btn  w-100" type="submit" value="SIGN IN"></input>
+        {/* <input onClick={onclickhandler} style={{color:"white"}} className="btn  w-100" type="submit" value="SIGN IN"></input> */}
+        <button onClick={onclickhandler} style={{color:"white"}} className="btn  w-100" type="submit" >SIGN IN</button>
     </form>
-
 </div>
   )
 }
