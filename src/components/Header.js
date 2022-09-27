@@ -5,7 +5,7 @@ const Header = props => {
   return (
     <div className="jumbotron text-center">
       <h1 className="display-1">
-        <i class="material-icons brand-icon">fastfood</i> <strong>ALL FOODS</strong>
+        <i className="material-icons brand-icon">fastfood</i> <strong>ALL FOODS</strong>
 
         <div className="input-group w-50 mx-auto mt-5">
         <h3 className="text-center"style={{marginTop:"10px"}}>“Let food be thy medicine and medicine be thy food.” – Hippocrates </h3>
@@ -15,15 +15,15 @@ const Header = props => {
         <h2>Check out our favorite foods to make for every occasion, including holiday recipes, quick and easy dinners, healthy breakfast and lunch ideas, and more. Plus, the best cooking tips and shortcuts.</h2>
         </div>
       </h1>
-      <div class="input-group w-50 mx-auto mt-5">
+      <div className="input-group w-50 mx-auto mt-5">
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           placeholder="Search Your Recipe..."
           value={search}
           onChange={onInputChange}
         />
-        <div class="input-group-append">
+        <div className="input-group-append">
           <button className="btn btn-dark" onClick={onSearchClick}>
             Search Recipe
           </button>

@@ -7,7 +7,7 @@ const Recipes = props => {
    <Fragment>
 
    
-    <div class="card-columns" style={{backgroundColor:"#CDF0EA"}}>
+    <div className="card-columns" style={{backgroundColor:"#CDF0EA"}}>
      
       {recipes.map(recipe => (
         <RecipeItem

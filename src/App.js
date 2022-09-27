@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 function App() {
 
   
-  const [search, setSerach] = useState("chicken");
+  const [search, setSerach] = useState("");
   const [recipes, setRecipes] = useState([]);
 
   const APP_ID = "a9e97685";

@@ -19,14 +19,14 @@ const Signform = () => {
     
     <form className="needs-validation">
         <div className="form-group was-validated">
-            <label className="form-label" for="email" >Email address</label>
+            <label className="form-label">Email address</label>
             <input className="form-control" type="email" onKeyUp={(e)=>{setUser(e.target.value)}} id="email" required></input>
             <div>
                 Please enter your email address
             </div>
         </div>
         <div className="form-group was-validated">
-            <label className="form-label" for="password">Password</label>
+            <label className="form-label">Password</label>
             <input className="form-control" type="password" onKeyUp={(e)=>{setPassword(e.target.value)}} id="password" required></input>
             <div>
                 Please enter your password
@@ -34,9 +34,8 @@ const Signform = () => {
         </div>
         <div className="form-group form-check">
             <input className="form-check-input" type="checkbox" id="check"></input>
-            <label className="form-check-label" for="check">Remember me</label>
+            <label className="form-check-label">Remember me</label>
         </div>
-        {/* <input onClick={onclickhandler} style={{color:"white"}} className="btn  w-100" type="submit" value="SIGN IN"></input> */}
         <button onClick={onclickhandler} style={{color:"white"}} className="btn  w-100" type="submit" >SIGN IN</button>
     </form>
 </div>

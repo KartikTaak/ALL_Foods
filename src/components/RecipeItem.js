@@ -12,19 +12,19 @@ const RecipeItem = props => {
 
   return (<>
   
-      <div class="card py-2 text-center" style={hide}>
-      <div class="text-right me-3"><i class="fa fa-times fa-lg" aria-hidden="true" onClick={Hide} ></i></div>
+      <div className="card text-center  " style={hide}>
+      <div className="text-right me-4 mt-3"><i className="fa fa-times fa-lg" aria-hidden="true" onClick={Hide} ></i></div>
         <img src={image} className="img-fluid w-50 mx-auto rounded-circle" />
-        <div class="card-body">
+        <div className="card-body">
           <h5>{name}</h5>
         </div>
         <ul>
-        <li class="mb-1">
-        <button class="btn btn-toggle " data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+        <li className="mb-1">
+        <button className="btn btn-toggle " data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false">
           Ingredients
         </button>
-        <div class="collapse" id="account-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small list-group list-group-flush">    
+        <div className="collapse" id="collapse">
+          <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small list-group list-group-flush">    
           {ingredientLines.map(ingredient => (
             <li className="list-group-item">{ingredient}</li>
           ))}
@@ -32,7 +32,7 @@ const RecipeItem = props => {
         </div>
       </li>
       </ul>
-        <i class="fa fa-heart" aria-hidden="true" ></i>
+        <i className="fa fa-heart" aria-hidden="true" ></i>
       </div>
       </>
   );
