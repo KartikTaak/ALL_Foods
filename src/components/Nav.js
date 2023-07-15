@@ -6,9 +6,7 @@ const Nav = () => {
         <div style={{position:"fixed",top:0,zIndex:"100"}} className="container-fluid bg-black">
             <div className="col-sm-12 ">
                 <nav className="navbar navbar-expand-lg">
-                {/* logo */}
                     <a className="navbar-brand text-light" href="#"><img  height="50px" width="170"src={process.env.PUBLIC_URL + "/s.jpeg"}></img></a>
-                  {/* toggle button for responsive */}
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -21,12 +19,6 @@ const Nav = () => {
                   
                 <li className="nav-item">
                     <a className="nav-link text-light" href="#search"><span style={{fontSize:"22px"}}>Search</span></a>
-                  </li>
-                  
-    
-                  
-                  <li className="nav-item">
-                    <a className="nav-link text-light " href="#sign"><span style={{fontSize:"22px"}}>Sign In</span></a>
                   </li>
                 </ul>
                  

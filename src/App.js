@@ -5,7 +5,6 @@ import Recipes from "./components/Recipes";
 import Axios from "axios";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
-import Signform from "./components/Signform";
 import Footer from "./components/Footer";
 
 function App() {
@@ -45,7 +44,7 @@ function App() {
 
       <section id="home">
       <Home />
-      </section>
+      </section>npm
 
 
   <section id="search">
@@ -62,11 +61,6 @@ function App() {
       </div>
     </div>
     </section>
-
-    <section id="sign">
-      <Signform />
-    </section>
-
     <section id="footer">
     <Footer  />
     </section>

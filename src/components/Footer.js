@@ -9,7 +9,6 @@ const Footer = () => {
                 <div className='col-sm-12 '>
                         <h5 className="text-white text-center mb-3 mt-3">Copyright © 2022 </h5>
                         <h5 className="text-white text-center mb-3 mt-3">All Foods , All rights Reserved.</h5> 
-                        <h5 className="text-white text-center mb-3 mt-3"> Created by Team 7 </h5>
                 </div>
             </div>
         </div>
